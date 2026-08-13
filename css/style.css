@@ -24,6 +24,7 @@ img {
     margin: 0 auto 20px;
     line-height: 1.7;
     color: #fff;
+    text-align: justify;
 }
 
 .footer {
@@ -43,9 +44,19 @@ img {
 
 .descricao a {
     color: #2c833b;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-.descricao a:hover {
-    text-decoration: underline;
+.home {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-link {
+    display: block;
+    margin-bottom: 40px;
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
 }
