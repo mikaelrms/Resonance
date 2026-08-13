@@ -72,7 +72,7 @@ img {
 
 .footer-home {
     text-align: center;
-    margin-top: 20%;
+    margin-top: auto;
 }
 
 @media (max-width: 600px) {
@@ -95,7 +95,7 @@ img {
     .descricao {
         font-size: 14px;
         line-height: 1.6;
-        text-align: left;
+        text-align: justify;
     }
 
     .footer {
@@ -106,5 +106,10 @@ img {
     .home-link {
         font-size: 13px;
         margin-bottom: 30px;
+    }
+
+    .footer-home {
+        text-align: center;
+        margin-top: 120%;
     }
 }
