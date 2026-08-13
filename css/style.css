@@ -60,3 +60,37 @@ img {
     text-decoration: none;
     font-size: 14px;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .title {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .descricao {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .footer {
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+    .home-link {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+}
