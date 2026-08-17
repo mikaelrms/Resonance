@@ -72,7 +72,12 @@ img {
 
 .footer-home {
     text-align: center;
-    margin-top: auto;
+    margin-top: 22%;
+}
+
+.footer-home a {
+    color: #eee;
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -108,8 +113,12 @@ img {
         margin-bottom: 30px;
     }
 
+    .home {
+        margin-top: 50%;
+    }
+
     .footer-home {
         text-align: center;
-        margin-top: 40%;
+        margin-top: 70%;
     }
 }
