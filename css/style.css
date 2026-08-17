@@ -80,7 +80,7 @@ img {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (max-width: 900px) {
 
     body {
         padding: 20px;
