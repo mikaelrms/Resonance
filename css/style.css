@@ -121,4 +121,8 @@ img {
         text-align: center;
         margin-top: 70%;
     }
+
+    .footer-home a {
+        text-decoration: none;
+    }
 }
