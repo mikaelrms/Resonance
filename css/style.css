@@ -27,6 +27,11 @@ img {
     text-align: justify;
 }
 
+.descricao a {
+    color: #2c833b;
+    text-decoration: underline;
+}
+
 .footer {
     text-align: center;
     margin-top: 60px;
@@ -39,11 +44,6 @@ img {
 }
 
 .footer a:hover {
-    text-decoration: underline;
-}
-
-.descricao a {
-    color: #2c833b;
     text-decoration: underline;
 }
 
@@ -72,7 +72,7 @@ img {
 
 .footer-home {
     text-align: center;
-    margin-top: 22%;
+    margin-top: 16%;
 }
 
 .footer-home a {
@@ -114,12 +114,12 @@ img {
     }
 
     .home {
-        margin-top: 50%;
+        margin-top: 30%;
     }
 
     .footer-home {
         text-align: center;
-        margin-top: 70%;
+        margin-top: 50%;
     }
 
     .footer-home a {
