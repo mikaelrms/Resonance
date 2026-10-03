@@ -85,8 +85,17 @@ form {
     max-width: 400px;
     margin: 20px auto;
     padding: 25px;
-    box-sizing: border-box;
     background-color: #000;
+}
+
+h2 { 
+    text-align: center; 
+} 
+
+label { 
+    display: block; 
+    margin-top: 10px; 
+    margin-bottom: 5px; 
 }
 
 input,textarea {
