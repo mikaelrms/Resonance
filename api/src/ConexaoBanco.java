@@ -1,5 +1,7 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class ConexaoBanco {
     public static void main(String[] args) {
@@ -9,10 +11,30 @@ public class ConexaoBanco {
 
         try {
             Connection conexao = DriverManager.getConnection(url, usuario, senha);
-            System.out.println("Conexao realizada com sucesso!");
+
+            String sql = "SELECT id, nome, genero, ano FROM bandas";
+
+            PreparedStatement comando = conexao.prepareStatement(sql);
+            ResultSet resultado = comando.executeQuery();
+
+            while (resultado.next()) {
+                int id = resultado.getInt("id");
+                String nome = resultado.getString("nome");
+                String genero = resultado.getString("genero");
+                int ano = resultado.getInt("ano");
+
+                System.out.println("ID: " + id);
+                System.out.println("Nome: " + nome);
+                System.out.println("Gênero: " + genero);
+                System.out.println("Ano: " + ano);
+                System.out.println();
+            }
+
+            resultado.close();
+            comando.close();
             conexao.close();
+
         } catch (Exception e) {
-            System.out.println("Erro ao conectar:");
             e.printStackTrace();
         }
     }
